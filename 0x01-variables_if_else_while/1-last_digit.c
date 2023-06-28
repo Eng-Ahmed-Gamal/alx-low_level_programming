@@ -18,11 +18,13 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
+int last_digit;
+int abs_n;
 printf("Last digit of %d is ", n);
 /* Get the absolute value of n */
-int abs_n = abs(n);
+abs_n = abs(n);
 /* Get the last digit of n */
-int last_digit = abs_n % 10;
+last_digit = abs_n % 10;
 /* Print the last digit of n */
 printf("%d ", last_digit);
 /* Print a message indicating whether the last digit is >5, <6 and not 0, or 0 */
