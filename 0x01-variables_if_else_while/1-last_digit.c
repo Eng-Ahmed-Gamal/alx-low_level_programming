@@ -24,7 +24,7 @@ printf("Last digit of %d is ", n);
 last_digit = n % 10;
 if (n < 0)
 {
-last_digit = -1 * last_digit;
+last_digit *= -1;
 }
 /* Print the last digit of n */
 printf("%d ", last_digit);
